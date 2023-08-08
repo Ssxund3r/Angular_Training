@@ -66,3 +66,11 @@ angularApp.service('nameService', function () {
         return self.name.length;
     }
 });
+
+angularApp.directive("searchResult", function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/searchresult.html',
+        replace: true
+    }
+});
